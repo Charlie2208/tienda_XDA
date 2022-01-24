@@ -1,11 +1,14 @@
 
 .asideleft img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    // height: 100%;
+    object-fit: cover;
+    object-position: 0px 20%
     
 
    
 }
+
 
 @include desktop-view{
 
@@ -19,10 +22,6 @@
         display: none;
     }
 }
-
-
-
-
 
 
 @include desktop-view{

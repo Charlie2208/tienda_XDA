@@ -32,13 +32,48 @@
         color: $smokyblack;
         margin-right: 50px;
     }
-
+    &__li{
+        
+    
+        @include phone-view{
+            width: 100vw;
+                max-height: 0;
+                overflow: hidden;
+                display: flex!important;
+                flex-direction: column;
+                justify-content: flex-start;
+                background: $smokyblack;
+                position: absolute;
+                left: 0;
+                top: 65px;
+                padding: 0;
+                transition: all 0.3s ease-in-out;
+                color: $white;
+                
+                // display: none;
+                input:checked ~ &{
+                    width: 100vw;
+                    max-height: 300px;
+                    overflow: hidden;
+                    display: flex!important;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    background: $white;
+                    position: absolute;
+                    left: 0;
+                    top: 65px;
+                    
+                }
+    
+        }
+    }
 
 }
 
 #toggle{
     display: none;
 }
+
 
 .fa-bars{
     display: none;
@@ -47,15 +82,10 @@
         display: flex;
         align-items: center;
         font-size: $xx-large;
+        margin-right: 1rem;
     }
 
     
 }
 
 
-@include phone-view{
-    .navbar li{
-        display: none;
-    }
-
-}
