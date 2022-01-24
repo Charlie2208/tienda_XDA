@@ -1,0 +1,23 @@
+.btn{
+    background-color: $white;
+    color: $smokyblack;
+    width: 120px;
+    height: 40px;
+    // margin: 1px solid $smokyblack;
+    border: 1px solid $smokyblack;
+    font-family:'Raleway', sans-serif;
+    font-weight: $bold;
+
+}
+
+.btn:hover{
+    width: 120px;
+    height: 40px;
+    border: 1px solid $quicksilver;
+    font-family:'Raleway', sans-serif;
+    font-weight: $bold;
+}
+
+.btn:focus{
+    color: $quicksilver;
+}

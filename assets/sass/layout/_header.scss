@@ -1,0 +1,10 @@
+h3{
+    position: absolute;
+    transform: rotate(90deg);
+    left: 37%;
+    top: 650px;
+    @include tablet-view{
+        left: 90%;
+        top: 980px;
+    }
+}

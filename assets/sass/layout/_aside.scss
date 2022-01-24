@@ -1,0 +1,51 @@
+
+.asideleft img{
+    width: 100%;
+    height: 100%;
+    
+
+   
+}
+
+@include desktop-view{
+
+    .asideleft img{
+        width: 100%;
+    }
+}
+
+@include tablet-view{
+    .asideleft{
+        display: none;
+    }
+}
+
+
+
+
+
+
+@include desktop-view{
+
+    .asidetop{
+    display: none;
+  }
+}
+
+@include tablet-view{
+
+    .asidetop img{
+        width: 100vw;
+        height: 25rem;
+        object-fit: cover;
+        object-position: 0px 20%
+    }
+}
+
+@include phone-view{
+
+    .asidetop img{
+        height: 20rem;
+        object-position: 0px 10%
+    }
+}

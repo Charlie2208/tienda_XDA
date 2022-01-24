@@ -1,0 +1,61 @@
+.navbar{
+    
+    color: $smokyblack;
+    background-color: $white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__brand{
+        width: 6.25rem;
+        height: 6.25rem;
+        background-color: $smokyblack;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__li{
+        display: flex;
+        list-style: none;
+        font-family:'Raleway', sans-serif;
+        font-weight: bold;
+
+
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $smokyblack;
+        margin-right: 50px;
+    }
+
+
+}
+
+#toggle{
+    display: none;
+}
+
+.fa-bars{
+    display: none;
+
+    @include phone-view{
+        display: flex;
+        align-items: center;
+        font-size: $xx-large;
+    }
+
+    
+}
+
+
+@include phone-view{
+    .navbar li{
+        display: none;
+    }
+
+}
